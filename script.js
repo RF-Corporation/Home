@@ -1,7 +1,7 @@
 // Set current year in footer
 document.getElementById('current-year').textContent = new Date().getFullYear();
 
-// Mobile menu toggle
+// Menu 
 const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
 const mobileMenu = document.querySelector('.mobile-menu');
 
@@ -9,7 +9,7 @@ mobileMenuBtn.addEventListener('click', () => {
   mobileMenu.classList.toggle('show');
 });
 
-// Close mobile menu when a link is clicked
+// Chiude il menu
 const mobileLinks = document.querySelectorAll('.mobile-link');
 mobileLinks.forEach(link => {
   link.addEventListener('click', () => {
@@ -39,7 +39,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-// Add active class to nav links on scroll
+//Scrollamento quando clicco il pulsante
 window.addEventListener('scroll', () => {
   const sections = document.querySelectorAll('section');
   const navLinks = document.querySelectorAll('.nav-link');
@@ -62,7 +62,7 @@ window.addEventListener('scroll', () => {
   });
 });
 
-// Animated counter for stats (optional enhancement)
+// Counter Animati
 function animateCounters() {
   const counters = document.querySelectorAll('.stat-count');
   
@@ -88,7 +88,6 @@ function animateCounters() {
   });
 }
 
-// Intersection Observer for animations (optional enhancement)
 const fadeElements = document.querySelectorAll('.fade-in');
 
 const fadeObserver = new IntersectionObserver((entries) => {
